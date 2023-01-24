@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
+import Room from "./Room";
+import MetaGroup from "./MetaGroup";
 
 const CardContent = styled.div`
 display: flex;
@@ -12,21 +14,21 @@ const Address = styled.p`
   color: var(--color-text);
 `;
 
-const ButtonsGroup = styled.div`
+const RoomsGroup = styled.div`
   display: flex;
   align-items: center;
   gap: 9px;
 `;
 
-const MetaGroup = styled.div`
-
-`;
-
 const CardBody = () => {
     return (
         <CardContent>
-            <Address>HJGGHFKJJF</Address>
-            <ButtonsGroup />
+            <Address>249 Bowery, New York, NY 10002, USA</Address>
+            <RoomsGroup>
+                <Room />
+                <Room />
+                <Room />
+            </RoomsGroup>
             <MetaGroup />
         </CardContent>
     );

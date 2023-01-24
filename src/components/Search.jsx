@@ -9,6 +9,7 @@ const InputContainer = styled.label`
   justify-content: space-between;
   
   border-radius: var(--radi-input);
+  border: solid 1px var(--color-text);
   width: 100%;
   max-width: 289px;
   //margin-bottom: 1rem;

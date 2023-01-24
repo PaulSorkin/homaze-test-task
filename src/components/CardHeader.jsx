@@ -14,7 +14,7 @@ const Name = styled.p`
 const Id = styled.p`
   font-weight: var(--fw-normal);
   font-size: var(--fs-meta);
-  color: var(--color-text);
+  color: var(--color-text-light);
 `;
 
 const CardHeader = () => {
