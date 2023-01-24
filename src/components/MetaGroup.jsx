@@ -38,6 +38,8 @@ const Price = styled.p`
 
 
 const MetaGroup = ({projectState, totalProject, updated_timestmp}) => {
+    let money = new Intl.NumberFormat("en", {style: "currency", currency: "USD", minimumFractionDigits: 2}).format(totalProject)
+
     return (
         <Wrapper>
             <Item>
@@ -46,7 +48,7 @@ const MetaGroup = ({projectState, totalProject, updated_timestmp}) => {
             </Item>
             <Item>
                 <Heading>Total</Heading>
-                <Price>{`\$${totalProject}`}</Price>
+                <Price>{money}</Price>
             </Item>
             <Item>
                 <Heading>Stage</Heading>
