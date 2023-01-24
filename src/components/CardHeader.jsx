@@ -25,6 +25,20 @@ const Name = styled.p`
   letter-spacing: var(--letter-spacing);
 `;
 
+const NoName = styled.p`
+  margin: 0;
+  font-weight: var(--fw-light);
+  font-size: var(--fs-md);
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  
+  max-width: 319px;
+  letter-spacing: var(--letter-spacing);
+`;
+
+
 const Id = styled.p`
   margin: 0;
   font-weight: var(--fw-normal);
@@ -36,7 +50,7 @@ const Id = styled.p`
 const CardHeader = ({projectId, customerName}) => {
     return (
         <Wrapper>
-            <Name>{customerName}</Name>
+            {customerName ? (<Name>{customerName}</Name>) : (<NoName>Untitled</NoName>)}
             <Id>{`ID: ${projectId}`}</Id>
         </Wrapper>
     );

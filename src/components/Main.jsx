@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from "styled-components";
 import {Search} from "./Search";
 import {Container} from "./container";
@@ -25,11 +25,19 @@ const CardsContainer = styled.div`
 const Main = () => {
     const dispatch = useDispatch();
     const projects = useSelector(state => state.projects.projects.items);
+    const [filteredProjects, setFilteredProjects] = useState(projects);
 
     useEffect(() => {
-        //if(!projects.length)
+        //if(!projects.length);
         dispatch(fetchProjects());
     }, []);
+
+    useEffect(() => {
+        //if(!projects.length);
+        setFilteredProjects(projects);
+    }, [projects]);
+
+
 
 
     return (
@@ -37,7 +45,7 @@ const Main = () => {
             <Wrapper>
                 <Search/>
                 <CardsContainer>
-                    {projects.map((project) => {
+                    {filteredProjects.map((project) => {
                         return (
                             <Card key={project.projectId} projectId={project.projectId}
                                   customerName={project.customerName} address={project.address}
