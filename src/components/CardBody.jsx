@@ -6,13 +6,13 @@ display: flex;
   flex-direction: column;
 `;
 
-const Adress = styled.p`
+const Address = styled.p`
   font-weight: var(--fw-normal);
   font-size: var(--fs-sm);
   color: var(--color-text);
 `;
 
-const ButonsGroup = styled.div`
+const ButtonsGroup = styled.div`
   display: flex;
   align-items: center;
   gap: 9px;
@@ -25,8 +25,8 @@ const MetaGroup = styled.div`
 const CardBody = () => {
     return (
         <CardContent>
-            <Adress>HJGGHFKJJF</Adress>
-            <ButonsGroup />
+            <Address>HJGGHFKJJF</Address>
+            <ButtonsGroup />
             <MetaGroup />
         </CardContent>
     );
