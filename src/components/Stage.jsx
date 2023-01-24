@@ -16,6 +16,7 @@ const Item = styled.div`
 `;
 
 const CurrentStage = styled.p`
+  margin: 0;
   font-weight: var(--fw-normal);
   font-size: var(--fs-meta);
   color: var(--color-text-canselled);

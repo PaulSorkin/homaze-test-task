@@ -14,7 +14,9 @@
   --fw-light: 300;
   --fw-normal: 400; 
   --fw-semibold: 600; 
-  --fw-bold: 700; 
+  --fw-bold: 700;
+
+  --letter-spacing: 0.272728px;
 
   /* Other */
   --radi-card: 9px; 
@@ -50,3 +52,6 @@ body {
   background-color: var(--color-pg-bg);
 }
 
+html {
+  font-size: 10px;
+}

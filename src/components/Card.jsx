@@ -4,6 +4,7 @@ import CardHeader from "./CardHeader";
 import CardBody from "./CardBody";
 
 const CardItem = styled.div`
+  width: 100%;
   max-width: 350px;
   border: solid var(--color-card-border) 1px;
   border-radius: var(--radi-card);

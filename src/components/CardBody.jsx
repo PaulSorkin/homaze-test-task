@@ -9,6 +9,7 @@ display: flex;
 `;
 
 const Address = styled.p`
+  margin: 0;
   font-weight: var(--fw-normal);
   font-size: var(--fs-sm);
   color: var(--color-text);

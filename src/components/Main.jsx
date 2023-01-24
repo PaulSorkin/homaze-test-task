@@ -7,7 +7,8 @@ import {useDispatch, useSelector} from "react-redux";
 import {fetchProjects} from "../redux/slices/projects";
 
 const Wrapper = styled.main`
-  padding: 1.3rem 2rem;
+  width: 100%;
+  padding: 2.5rem 2.8rem;
   background-color: var(--color-bg);
   border: 1px solid #DDEDF4;
   border-radius: var(--radi-card);
@@ -16,6 +17,9 @@ const Wrapper = styled.main`
 const CardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
+  padding: 20px 0 30px 0;
+  justify-content: center;
+  gap: 2.6rem;
 `;
 
 const Main = () => {

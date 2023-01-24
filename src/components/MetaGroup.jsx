@@ -16,18 +16,21 @@ const Item = styled.div`
 `;
 
 const Heading = styled.p`
+  margin: 0;
   font-weight: var(--fw-normal);
   font-size: var(--fs-meta);
   color: var(--color-text-light);
 `;
 
 const Date = styled.p`
+  margin: 0;
   font-weight: var(--fw-normal);
   font-size: var(--fs-sm);
   color: var(--color-text);
 `;
 
 const Price = styled.p`
+  margin: 0;
   font-weight: var(--fw-bold);
   font-size: var(--fs-sm);
   color: var(--color-text);

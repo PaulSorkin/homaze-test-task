@@ -3,7 +3,7 @@ import Icon from "../asset/icons/Icon.png"
 
 const InputContainer = styled.label`
   background-color: var(--color-bg);
-  padding: 0.9rem;
+  padding: 13px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,13 +31,15 @@ const Input = styled.input.attrs({
   font-size: var(--fs-sm);
   font-weight: var(--fw-normal);
 
-  letter-spacing: 0.272728px;
+  letter-spacing: var(--letter-spacing);
+  opacity: 0.2;
 `;
 
 const SearchIcon = styled.img`
   width: 1rem;
   height: 1rem;
   overflow: hidden;
+  opacity: 0.5;
 `;
 
 
