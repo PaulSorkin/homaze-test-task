@@ -19,7 +19,8 @@
   /* Other */
   --radi-card: 9px; 
   --radi-tag: 6px; 
-  --radi-button: 50px; 
+  --radi-input: 7px;
+  --radi-button: 50px;
 
   /* App colors */
   --color-pg-bg: #C4C4C4; 

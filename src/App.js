@@ -2,21 +2,23 @@ import {useDispatch, useSelector} from "react-redux";
 import {useEffect} from "react";
 import {fetchProjects} from "./redux/slices/projects";
 import Header from "./components/Header";
+import Main from "./components/Main";
 
 function App() {
-  const dispatch = useDispatch();
-  const projects = useSelector(state => state.projects);
+    const dispatch = useDispatch();
+    const projects = useSelector(state => state.projects);
 
-useEffect(() => {
-  dispatch(fetchProjects());
-  console.log(projects);
-}, []);
+    useEffect(() => {
+        dispatch(fetchProjects());
+        console.log(projects);
+    }, []);
 
-  return (
-    <>
-    <Header />
-    </>
-  );
+    return (
+        <>
+            <Header/>
+            <Main/>
+        </>
+    );
 }
 
 export default App;

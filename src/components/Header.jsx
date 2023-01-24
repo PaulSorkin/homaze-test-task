@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React from 'react';
 import {Container} from "./container";
 
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: start;
