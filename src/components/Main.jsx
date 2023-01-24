@@ -33,17 +33,28 @@ const Main = () => {
     }, []);
 
     useEffect(() => {
-        //if(!projects.length);
         setFilteredProjects(projects);
     }, [projects]);
 
+    const [search, setSearch] = useState('');
 
+    const handleSearch = (search) => {
+        let data = [...projects];
+        if (search.length > 1) {
+            data = data.filter(p => p.customerName.toLowerCase().includes(search.toLowerCase()) ||
+                p.address.toLowerCase().includes(search.toLowerCase()))
+        }
+        setFilteredProjects(data)
+    }
+    useEffect(() => {
+            handleSearch(search)},
+        [search])
 
 
     return (
         <Container>
             <Wrapper>
-                <Search/>
+                <Search search={search} setSearch={setSearch} />
                 <CardsContainer>
                     {filteredProjects.map((project) => {
                         return (
