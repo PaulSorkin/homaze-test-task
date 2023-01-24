@@ -21,10 +21,10 @@ const RoomName = styled.p`
   color: var(--color-text-canselled);
 `;
 
-const Room = () => {
+const Room = ({room}) => {
     return (
         <Item>
-            <RoomName>Kitchen</RoomName>
+            <RoomName>{room}</RoomName>
         </Item>
     );
 };

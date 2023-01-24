@@ -24,10 +24,10 @@ const CardBody = ({address, projectState, totalProject, rooms, updated_timestmp}
     return (
         <CardContent>
             <Address>{address}</Address>
-            <RoomsGroup>
-                <Room />
-                <Room />
-                <Room />
+            <RoomsGroup rooms={rooms}>
+                {rooms.map((room) => {
+                    return <Room room={room.name} key={room.name} />
+                })}
             </RoomsGroup>
             <MetaGroup projectState={projectState} totalProject={totalProject}
                        updated_timestmp={updated_timestmp} />
