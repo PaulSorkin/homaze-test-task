@@ -17,11 +17,11 @@ const Id = styled.p`
   color: var(--color-text-light);
 `;
 
-const CardHeader = () => {
+const CardHeader = ({projectId, customerName}) => {
     return (
         <Wrapper>
-            <Name>FMDJFKkvdfsv</Name>
-            <Id>vfdsvsvfFRFSFV</Id>
+            <Name>{customerName}</Name>
+            <Id>{`ID: ${projectId}`}</Id>
         </Wrapper>
     );
 };

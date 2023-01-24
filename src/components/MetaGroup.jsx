@@ -37,20 +37,20 @@ const Price = styled.p`
 
 
 
-const MetaGroup = () => {
+const MetaGroup = ({projectState, totalProject, updated_timestmp}) => {
     return (
         <Wrapper>
             <Item>
                 <Heading>Last updated</Heading>
-                <Date>11.12.2022</Date>
+                <Date>{updated_timestmp}</Date>
             </Item>
             <Item>
                 <Heading>Total</Heading>
-                <Price>$11,250.00</Price>
+                <Price>{`\$${totalProject}`}</Price>
             </Item>
             <Item>
                 <Heading>Stage</Heading>
-                <Stage />
+                <Stage projectState={projectState} />
             </Item>
         </Wrapper>
     );

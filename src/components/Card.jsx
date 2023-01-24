@@ -11,11 +11,13 @@ const CardItem = styled.div`
   flex-direction: column;
 `;
 
-const Card = () => {
+const Card = ( {projectId, customerName, address, projectState, totalProject, updated_timestmp, rooms} ) => {
     return (
         <CardItem>
-            <CardHeader />
-            <CardBody />
+            <CardHeader projectId={projectId} customerName={customerName} />
+            <CardBody address={address}
+                      rooms={rooms} updated_timestmp={updated_timestmp}
+                      totalProject={totalProject} projectState={projectState} />
         </CardItem>
     );
 };

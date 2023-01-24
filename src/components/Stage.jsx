@@ -21,10 +21,10 @@ const CurrentStage = styled.p`
   color: var(--color-text-canselled);
 `;
 
-const Stage = () => {
+const Stage = ({projectState}) => {
     return (
         <Item>
-            <CurrentStage>In progress</CurrentStage>
+            <CurrentStage>{projectState}</CurrentStage>
         </Item>
     );
 };

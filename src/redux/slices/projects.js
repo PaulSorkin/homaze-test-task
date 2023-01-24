@@ -2,13 +2,13 @@ import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 import axios from "../../axios";
 
 export const fetchProjects = createAsyncThunk('projects/fetchProjects', async () => {
-    const {data} = await axios.get('');
+    const { data } = await axios.get('');
     return data;
 });
 
 const initialState = {
     projects: {
-        items: {},
+        items: [],
         status: 'loading',
     },
 };

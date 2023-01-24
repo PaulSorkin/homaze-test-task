@@ -20,16 +20,17 @@ const RoomsGroup = styled.div`
   gap: 9px;
 `;
 
-const CardBody = () => {
+const CardBody = ({address, projectState, totalProject, rooms, updated_timestmp}) => {
     return (
         <CardContent>
-            <Address>249 Bowery, New York, NY 10002, USA</Address>
+            <Address>{address}</Address>
             <RoomsGroup>
                 <Room />
                 <Room />
                 <Room />
             </RoomsGroup>
-            <MetaGroup />
+            <MetaGroup projectState={projectState} totalProject={totalProject}
+                       updated_timestmp={updated_timestmp} />
         </CardContent>
     );
 };

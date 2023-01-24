@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components";
 import {Search} from "./Search";
 import {Container} from "./container";
 import Card from "./Card";
+import {useDispatch, useSelector} from "react-redux";
+import {fetchProjects} from "../redux/slices/projects";
 
 const Wrapper = styled.main`
   padding: 1.3rem 2rem;
@@ -17,12 +19,29 @@ const CardsContainer = styled.div`
 `;
 
 const Main = () => {
+    const dispatch = useDispatch();
+    const projects = useSelector(state => state.projects.projects.items);
+
+    useEffect(() => {
+        //if(!projects.length)
+        dispatch(fetchProjects());
+    }, []);
+
+
     return (
         <Container>
             <Wrapper>
                 <Search/>
                 <CardsContainer>
-                    <Card/>
+                    {projects.map((project) => {
+                        return (
+                            <Card key={project.projectId} projectId={project.projectId}
+                                  customerName={project.customerName} address={project.address}
+                                  rooms={project.rooms} updated_timestmp={project.updated_timestmp}
+                                  totalProject={project.totalProject} projectState={project.projectState}
+                            />
+                        )
+                    })}
                 </CardsContainer>
             </Wrapper>
         </Container>
