@@ -20,16 +20,16 @@ const projectSlice = createSlice({
     extraReducers: {
         //Get projects
         [fetchProjects.pending]: (state) => {
-            state.posts.items = [];
-            state.posts.status = 'loading';
+            state.projects.items = [];
+            state.projects.status = 'loading';
         },
         [fetchProjects.fulfilled]: (state, action) => {
-            state.posts.items = action.payload;
-            state.posts.status = 'loaded';
+            state.projects.items = action.payload;
+            state.projects.status = 'loaded';
         },
         [fetchProjects.rejected]: (state) => {
-            state.posts.items = [];
-            state.posts.status = 'error';
+            state.projects.items = [];
+            state.projects.status = 'error';
         },
 
     }
