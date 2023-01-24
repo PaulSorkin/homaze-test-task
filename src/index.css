@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap'); 
+
+* {
+  box-sizing: border-box; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /* Typography */
+  --family: 'Poppins', sans-serif; 
+  --fs-meta: 10px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fw-light: 300; 
+  --fw-normal: 400; 
+  --fw-semibold: 600; 
+  --fw-bold: 700; 
+
+  /* Orher */
+  --radi-card: 9px; 
+  --radi-tag: 6px; 
+  --radi-button: 50px; 
+
+  /* App colors */
+  --color-pg-bg: #C4C4C4; 
+  --color-bg: #ffffff; 
+  --color-card-heading: #F6F9FA; 
+  --color-card-border: #DDEDF4; 
+
+  --color-text: #2D2D2D; 
+  --color-text-light:  #9F9F9F;
+
+  /* Buttons colors */
+  --color-text-canselled:  #3CB2E4; 
+  --color-bg-canselled:  #EBF7FC; 
+  --color-text-done:  #30D869; 
+  --color-bg-done:  #30D869; 
+  --color-text-negotiation:  #E4783C; 
+  --color-bg-negotiation:  #FAEEE8;
+
 }
+
+body {
+  margin: 0;
+  font-family: var(--family);
+  color: var( --color-text);
+  font-weight: var(--fw-light);
+  background-color: var(--color-pg-bg);
+}
+

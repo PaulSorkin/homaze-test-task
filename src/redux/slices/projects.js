@@ -8,7 +8,7 @@ export const fetchProjects = createAsyncThunk('projects/fetchProjects', async ()
 
 const initialState = {
     projects: {
-        items: [],
+        items: {},
         status: 'loading',
     },
 };
