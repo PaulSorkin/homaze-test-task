@@ -24,11 +24,20 @@ const Item = styled.div`
 
 const CurrentStage = styled.p`
   margin: 0;
-  font-weight: var(--fw-normal);
+  //font-weight: var(--fw-normal);
   font-size: var(--fs-sm);
   padding: 0.2rem 0.8rem;
   letter-spacing:var(--letter-spacing);
 
+  font-weight: ${props => {
+    if (props.projectState === "Cancelled") {
+      return 'var(--fw-bold)'
+    } else {
+      return 'var(--fw-normal)'
+    }
+  }
+  };
+  
   color: ${props => {
     if (props.projectState === "Done") {
       return 'var(--color-text-done)'
@@ -38,8 +47,9 @@ const CurrentStage = styled.p`
     }
     if (props.projectState === "Negotiation") {
       return 'var(--color-text-negotiation)'
+    } else {
+      return 'var(--color-text)'
     }
-    return 'var(--color-text)'
   }
   };
 `;
@@ -47,7 +57,7 @@ const CurrentStage = styled.p`
 const Stage = ({projectState}) => {
     return (
         <Item projectState={projectState}>
-            <CurrentStage>{projectState}</CurrentStage>
+            <CurrentStage projectState={projectState}>{projectState}</CurrentStage>
         </Item>
     );
 };
