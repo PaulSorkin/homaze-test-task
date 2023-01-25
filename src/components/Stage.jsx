@@ -33,7 +33,8 @@ const CurrentStage = styled.p`
   margin: 0;
   font-weight: var(--fw-normal);
   font-size: var(--fs-sm);
-  padding: 0.2rem 1rem;
+  padding: 0.2rem 0.8rem;
+  letter-spacing:var(--letter-spacing);
 
   color: ${props => {
     if (props.projectState === "Done") {
@@ -48,8 +49,6 @@ const CurrentStage = styled.p`
     return 'var(--color-text)'
   }
   };
-
-
 `;
 
 const Stage = ({projectState}) => {
