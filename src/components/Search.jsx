@@ -3,7 +3,7 @@ import Icon from "../asset/icons/Icon.png"
 
 const InputContainer = styled.label`
   background-color: var(--color-bg);
-  padding: 13px;
+  padding: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,12 +12,6 @@ const InputContainer = styled.label`
   border: solid 1px var(--color-text);
   width: 100%;
   max-width: 289px;
-  //margin-bottom: 1rem;
-  
-  /*@media(min-width: 767px) {
-    margin-bottom: 0;
-    width: 280px;
-  }*/
 `;
 
 const Input = styled.input.attrs({
@@ -36,12 +30,11 @@ const Input = styled.input.attrs({
 `;
 
 const SearchIcon = styled.img`
-  width: 1rem;
-  height: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
   overflow: hidden;
   opacity: 0.5;
 `;
-
 
 export const Search = ({search, setSearch}) => {
     return (

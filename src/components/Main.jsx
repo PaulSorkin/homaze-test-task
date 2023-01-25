@@ -17,7 +17,7 @@ const Wrapper = styled.main`
 const CardsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0 30px 0;
+  padding: 2rem 0 3rem 0;
   justify-content: center;
   column-gap: 2.6rem;
   row-gap: 2.3rem;
