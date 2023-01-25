@@ -7,9 +7,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  padding-bottom: 2rem;
-  padding-top: 1.6rem;
-  padding-left: 1.9rem;
+  padding: 1.6rem 0.1rem 1.6rem 1.9rem;
 `;
 
 const Name = styled.p`
@@ -20,7 +18,6 @@ const Name = styled.p`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  
   max-width: 319px;
   letter-spacing: var(--letter-spacing);
 `;
@@ -33,7 +30,6 @@ const NoName = styled.p`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  
   max-width: 319px;
   letter-spacing: var(--letter-spacing);
 `;

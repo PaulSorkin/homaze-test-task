@@ -19,7 +19,8 @@ const CardsContainer = styled.div`
   flex-wrap: wrap;
   padding: 20px 0 30px 0;
   justify-content: center;
-  gap: 2.6rem;
+  column-gap: 2.6rem;
+  row-gap: 2.3rem;
 `;
 
 const Main = () => {

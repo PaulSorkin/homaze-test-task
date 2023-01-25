@@ -4,6 +4,7 @@ import Stage from "./Stage";
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 `;
@@ -13,6 +14,7 @@ const Item = styled.div`
   flex-direction: column;
   align-items: start;
   justify-content: space-between;
+  gap: 0.3rem;
 `;
 
 const Heading = styled.p`
@@ -20,6 +22,7 @@ const Heading = styled.p`
   font-weight: var(--fw-normal);
   font-size: var(--fs-meta);
   color: var(--color-text-light);
+  letter-spacing: var(--letter-spacing)
 `;
 
 const Date = styled.p`
