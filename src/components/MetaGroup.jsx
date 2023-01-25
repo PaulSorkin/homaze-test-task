@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components";
 import Stage from "./Stage";
+import {converseDate} from "../utils/date";
 
 const Wrapper = styled.div`
   display: flex;
@@ -46,11 +47,15 @@ const Price = styled.p`
 const MetaGroup = ({projectState, totalProject, updated_timestmp}) => {
     let money = new Intl.NumberFormat("en", {style: "currency", currency: "USD", minimumFractionDigits: 2}).format(totalProject)
 
+    /*useEffect(() => {
+        converseDate(updated_timestmp)
+    }, [])*/
+
     return (
         <Wrapper>
             <Item>
                 <Heading>Last updated</Heading>
-                <Date>{updated_timestmp}</Date>
+                <Date>{converseDate(updated_timestmp)}</Date>
             </Item>
             <Item>
                 <Heading>Total</Heading>
