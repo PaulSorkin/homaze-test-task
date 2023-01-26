@@ -29,8 +29,9 @@ const Main = () => {
     const [filteredProjects, setFilteredProjects] = useState(projects);
 
     useEffect(() => {
-        //if(!projects.length);
-        dispatch(fetchProjects());
+        if (!projects.length) {
+            dispatch(fetchProjects());
+        }
     }, []);
 
     useEffect(() => {
