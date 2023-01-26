@@ -5,6 +5,7 @@ import {Container} from "./container";
 import Card from "./Card";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchProjects} from "../redux/slices/projects";
+import Preloader from "./Preloader";
 
 const Wrapper = styled.main`
   width: 100%;
@@ -26,6 +27,7 @@ const CardsContainer = styled.div`
 const Main = () => {
     const dispatch = useDispatch();
     const projects = useSelector(state => state.projects.projects.items);
+    const isLoading = useSelector(state => state.projects.projects.status === 'loading');
     const [filteredProjects, setFilteredProjects] = useState(projects);
 
     useEffect(() => {
@@ -56,18 +58,23 @@ const Main = () => {
     return (
         <Container>
             <Wrapper>
-                <Search search={search} setSearch={setSearch} />
-                <CardsContainer>
-                    {filteredProjects.map((project) => {
-                        return (
-                            <Card key={project.projectId} projectId={project.projectId}
-                                  customerName={project.customerName} address={project.address}
-                                  rooms={project.rooms} updated_timestmp={project.updated_timestmp}
-                                  totalProject={project.totalProject} projectState={project.projectState}
-                            />
-                        )
-                    })}
-                </CardsContainer>
+                {(isLoading) ? (<Preloader />) : (
+                    <>
+                    <Search search={search} setSearch={setSearch} />
+                    <CardsContainer>
+                {filteredProjects.map((project) => {
+                    return (
+                    <Card key={project.projectId} projectId={project.projectId}
+                    customerName={project.customerName} address={project.address}
+                    rooms={project.rooms} updated_timestmp={project.updated_timestmp}
+                    totalProject={project.totalProject} projectState={project.projectState}
+                    />
+                    )
+                })}
+                    </CardsContainer>
+                    </>
+                    )}
+
             </Wrapper>
         </Container>
     );
