@@ -28,13 +28,14 @@ const Main = () => {
     const dispatch = useDispatch();
     const projects = useSelector(state => state.projects.projects.items);
     const isLoading = useSelector(state => state.projects.projects.status === 'loading');
-    const [filteredProjects, setFilteredProjects] = useState(projects);
 
     useEffect(() => {
         if (!projects.length) {
             dispatch(fetchProjects());
         }
     }, []);
+
+    const [filteredProjects, setFilteredProjects] = useState(projects);
 
     useEffect(() => {
         setFilteredProjects(projects);
