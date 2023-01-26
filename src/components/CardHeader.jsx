@@ -8,7 +8,6 @@ const Wrapper = styled.div`
   align-items: start;
   justify-content: center;
   padding: 1.6rem 0.1rem 1.6rem 1.9rem;
-  //max-width: 100%;
 `;
 
 const Name = styled.p`

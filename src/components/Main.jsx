@@ -8,7 +8,7 @@ import {fetchProjects} from "../redux/slices/projects";
 
 const Wrapper = styled.main`
   width: 100%;
-  padding: 2.5rem 2.8rem;
+  padding: 2.5rem 2.8rem 0 2.8rem;
   background-color: var(--color-bg);
   border: 1px solid #DDEDF4;
   border-radius: var(--radi-card);
