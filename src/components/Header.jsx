@@ -31,7 +31,6 @@ const Header = () => {
             <Wrapper>
                 <Title>Contracts</Title>
             </Wrapper>
-
         </Container>
     );
 };

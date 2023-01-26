@@ -12,6 +12,11 @@ const InputContainer = styled.label`
   border: solid 1px var(--color-text);
   width: 100%;
   max-width: 289px;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    max-width: 100%;
+  }
 `;
 
 const Input = styled.input.attrs({
