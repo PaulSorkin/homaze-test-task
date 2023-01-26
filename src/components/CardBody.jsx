@@ -6,7 +6,7 @@ import MetaGroup from "./MetaGroup";
 const CardContent = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 1rem 1.2rem 2rem 1.8rem;
+  padding: 1rem 1.2rem 1.85rem 1.8rem;
   gap: 1.75rem;
 `;
 
