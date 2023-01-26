@@ -43,10 +43,10 @@ const SearchIcon = styled.img`
   opacity: 0.5;
 `;
 
-export const Search = ({search, setSearch}) => {
+export const Search = ({setSearch}) => {
     return (
         <InputContainer>
-            <Input onChange={(e) => setSearch(e.target.value)} value={search} />
+            <Input onChange={(e) => setSearch(e.target.value)}  />
             <SearchIcon src={Icon}/>
         </InputContainer>
     )

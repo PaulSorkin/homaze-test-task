@@ -61,7 +61,7 @@ const Main = () => {
             <Wrapper>
                 {(isLoading) ? (<Preloader/>) : (
                     <>
-                        <Search search={search} setSearch={setSearch}/>
+                        <Search setSearch={setSearch}/>
                         <CardsContainer>
                             {filteredProjects.map((project) => {
                                 return (
