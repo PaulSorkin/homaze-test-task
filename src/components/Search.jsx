@@ -21,12 +21,14 @@ const Input = styled.input.attrs({
   border: none;
   outline: none;
   background-color: var(--color-bg);
-  color: var(--color-text-light);
+  color: var(--color-text);
   font-size: var(--fs-sm);
   font-weight: var(--fw-normal);
 
   letter-spacing: var(--letter-spacing);
   opacity: 0.2;
+
+  flex-grow: 1;
 `;
 
 const SearchIcon = styled.img`
