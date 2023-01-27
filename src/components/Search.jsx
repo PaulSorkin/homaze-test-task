@@ -12,6 +12,11 @@ const InputContainer = styled.label`
   border: solid 1px var(--color-text);
   width: 100%;
   max-width: 289px;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    max-width: 100%;
+  }
 `;
 
 const Input = styled.input.attrs({
@@ -21,12 +26,14 @@ const Input = styled.input.attrs({
   border: none;
   outline: none;
   background-color: var(--color-bg);
-  color: var(--color-text-light);
+  color: var(--color-text);
   font-size: var(--fs-sm);
   font-weight: var(--fw-normal);
 
   letter-spacing: var(--letter-spacing);
   opacity: 0.2;
+
+  flex-grow: 1;
 `;
 
 const SearchIcon = styled.img`
@@ -36,10 +43,10 @@ const SearchIcon = styled.img`
   opacity: 0.5;
 `;
 
-export const Search = ({search, setSearch}) => {
+export const Search = ({setSearch}) => {
     return (
         <InputContainer>
-            <Input onChange={(e) => setSearch(e.target.value)} value={search} />
+            <Input onChange={(e) => setSearch(e.target.value)}  />
             <SearchIcon src={Icon}/>
         </InputContainer>
     )

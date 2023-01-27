@@ -15,8 +15,14 @@ const Title = styled.h1`
   text-decoration: none;
   font-weight: 600;
   margin: 0;
-
   letter-spacing: 0.436364px;
+  
+  @media (max-width: 1190px) {
+    margin-left: 1rem;
+  }
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
 `;
 
 const Header = () => {
@@ -25,7 +31,6 @@ const Header = () => {
             <Wrapper>
                 <Title>Contracts</Title>
             </Wrapper>
-
         </Container>
     );
 };

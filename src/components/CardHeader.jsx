@@ -18,7 +18,7 @@ const Name = styled.p`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 319px;
+  max-width: 100%;
   letter-spacing: var(--letter-spacing);
 `;
 
