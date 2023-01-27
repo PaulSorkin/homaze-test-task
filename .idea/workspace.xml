@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9e79559a-6810-4e43-86d0-04a7d03f2c63" name="Changes" comment="feat: improve search with custom useDebounce hook" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="new-search" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="bug-fix" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2KlzT6oln6WsdMw9VwFZUDCBioQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sorki/Documents/Test tasks/homaze-test-task/src/components&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sorki\Documents\Test tasks\homaze-test-task\src\components" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9e79559a-6810-4e43-86d0-04a7d03f2c63" name="Changes" comment="" />
+      <created>1674563961944</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674563961944</updated>
+      <workItem from="1674563964036" duration="22794000" />
+      <workItem from="1674590244448" duration="24755000" />
+      <workItem from="1674745928374" duration="19837000" />
+      <workItem from="1674783181304" duration="295000" />
+    </task>
+    <task id="LOCAL-00001" summary="init: install deps, add the endpoint">
+      <created>1674565406083</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674565406083</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: redux projects slice projects.js">
+      <created>1674565906091</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674565906091</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix: slice edition">
+      <created>1674566010327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674566010327</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: store.js">
+      <created>1674566141392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674566141392</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: css vars">
+      <created>1674570735033</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674570735033</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: install styled-components, make Header.jsx">
+      <created>1674572833890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674572833890</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: Search markup">
+      <created>1674577171651</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674577171651</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: Card markup">
+      <created>1674580797540</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674580797540</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: typos">
+      <created>1674580913487</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674580913487</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: card markup">
+      <created>1674583821343</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674583821343</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: cards mapping">
+      <created>1674590356892</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674590356892</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: rooms mapping">
+      <created>1674590631369</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674590631369</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: currency format">
+      <created>1674592889955</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674592889955</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: header and cards headings styles">
+      <created>1674597234523</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1674597234523</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: Untitled when there is no customer name">
+      <created>1674601263511</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674601263511</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: search">
+      <created>1674602534269</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674602534269</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: card styles">
+      <created>1674608113757</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674608113757</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: date conversion">
+      <created>1674610036005</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674610036005</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: pixel-perfect cards">
+      <created>1674612975774</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674612975774</updated>
+    </task>
+    <task id="LOCAL-00020" summary="refactor: minor editions">
+      <created>1674613730056</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1674613730056</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: project stage fonts">
+      <created>1674615009847</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674615009847</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: README.md">
+      <created>1674616196662</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1674616196662</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: package.json delete unused deps">
+      <created>1674746538033</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1674746538033</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix: Search.jsx">
+      <created>1674747103343</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1674747103343</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix: crop too long customer name for mobile view">
+      <created>1674747724165</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1674747724165</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fix: remove small vertical scrollbar on 1920x1080 (Full HD desktop)">
+      <created>1674749134614</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1674749134614</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: make cards even more pixel-perfect">
+      <created>1674749602858</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1674749602858</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat: delete commented out code">
+      <created>1674749871194</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1674749871194</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat: add preloader">
+      <created>1674765133393</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1674765133393</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: header styles for small screens">
+      <created>1674766155294</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1674766155294</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat: search styles for small screens">
+      <created>1674767422948</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1674767422948</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat: search optimization">
+      <created>1674770807643</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1674770807643</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: search optimization">
+      <created>1674771081042</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1674771081042</updated>
+    </task>
+    <task id="LOCAL-00034" summary="feat: handleSearch optimization">
+      <created>1674781195346</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1674781195346</updated>
+    </task>
+    <task id="LOCAL-00035" summary="feat: improve search with custom useDebounce hook">
+      <created>1674782759736</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1674782759736</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: card markup" />
+    <MESSAGE value="feat: cards mapping" />
+    <MESSAGE value="feat: rooms mapping" />
+    <MESSAGE value="feat: currency format" />
+    <MESSAGE value="feat: header and cards headings styles" />
+    <MESSAGE value="feat: Untitled when there is no customer name" />
+    <MESSAGE value="feat: search" />
+    <MESSAGE value="feat: card styles" />
+    <MESSAGE value="feat: date conversion" />
+    <MESSAGE value="feat: pixel-perfect cards" />
+    <MESSAGE value="refactor: minor editions" />
+    <MESSAGE value="feat: project stage fonts" />
+    <MESSAGE value="feat: README.md" />
+    <MESSAGE value="feat: package.json delete unused deps" />
+    <MESSAGE value="fix: Search.jsx" />
+    <MESSAGE value="fix: crop too long customer name for mobile view" />
+    <MESSAGE value="fix: remove small vertical scrollbar on 1920x1080 (Full HD desktop)" />
+    <MESSAGE value="feat: make cards even more pixel-perfect" />
+    <MESSAGE value="feat: delete commented out code" />
+    <MESSAGE value="feat: add preloader" />
+    <MESSAGE value="feat: header styles for small screens" />
+    <MESSAGE value="feat: search styles for small screens" />
+    <MESSAGE value="feat: search optimization" />
+    <MESSAGE value="feat: handleSearch optimization" />
+    <MESSAGE value="feat: improve search with custom useDebounce hook" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: improve search with custom useDebounce hook" />
+  </component>
+</project>
