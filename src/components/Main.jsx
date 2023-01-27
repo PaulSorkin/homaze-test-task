@@ -29,32 +29,29 @@ const Main = () => {
     const projects = useSelector(state => state.projects.projects.items);
     const isLoading = useSelector(state => state.projects.projects.status === 'loading');
 
+    const [search, setSearch] = useState('');
+    const [filteredProjects, setFilteredProjects] = useState(projects);
+
+    const handleSearch = (search) => {
+        if (search.length > 1) {
+            setFilteredProjects(projects.filter(p => p.customerName.toLowerCase().includes(search.toLowerCase()) ||
+                p.address.toLowerCase().includes(search.toLowerCase())));
+        } else setFilteredProjects(projects);
+    }
+
     useEffect(() => {
         if (!projects.length) {
             dispatch(fetchProjects());
         }
     }, []);
 
-    const [filteredProjects, setFilteredProjects] = useState(projects);
-
     useEffect(() => {
         setFilteredProjects(projects);
     }, [projects]);
 
-    const [search, setSearch] = useState('');
-
-    const handleSearch = (search) => {
-        let data = [...projects];
-        if (search.length > 1) {
-            data = data.filter(p => p.customerName.toLowerCase().includes(search.toLowerCase()) ||
-                p.address.toLowerCase().includes(search.toLowerCase()))
-        }
-        setFilteredProjects(data)
-    }
     useEffect(() => {
             handleSearch(search)
-        },
-        [search])
+        },        [search])
 
 
     return (
