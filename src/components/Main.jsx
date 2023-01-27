@@ -6,6 +6,7 @@ import Card from "./Card";
 import {useDispatch, useSelector} from "react-redux";
 import {fetchProjects} from "../redux/slices/projects";
 import Preloader from "./Preloader";
+import useDebounce from "../hooks/useDebounce";
 
 const Wrapper = styled.main`
   width: 100%;
@@ -49,9 +50,10 @@ const Main = () => {
         setFilteredProjects(projects);
     }, [projects]);
 
+    const debouncedValue = useDebounce(search, 400);
     useEffect(() => {
-            handleSearch(search)
-        },        [search])
+            handleSearch(debouncedValue)
+        },        [debouncedValue])
 
 
     return (
