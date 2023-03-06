@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e79559a-6810-4e43-86d0-04a7d03f2c63" name="Changes" comment="feat: improve search with custom useDebounce hook">
+    <list default="true" id="9e79559a-6810-4e43-86d0-04a7d03f2c63" name="Changes" comment="feat: favicon, title">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <workItem from="1674590244448" duration="24755000" />
       <workItem from="1674745928374" duration="19837000" />
       <workItem from="1674783181304" duration="295000" />
-      <workItem from="1678107591293" duration="685000" />
+      <workItem from="1678107591293" duration="1380000" />
     </task>
     <task id="LOCAL-00001" summary="init: install deps, add the endpoint">
       <created>1674565406083</created>
@@ -339,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674782759736</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="feat: favicon, title">
+      <created>1678108422483</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1678108422483</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +363,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: card markup" />
     <MESSAGE value="feat: cards mapping" />
     <MESSAGE value="feat: rooms mapping" />
     <MESSAGE value="feat: currency format" />
@@ -382,6 +387,7 @@
     <MESSAGE value="feat: search optimization" />
     <MESSAGE value="feat: handleSearch optimization" />
     <MESSAGE value="feat: improve search with custom useDebounce hook" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: improve search with custom useDebounce hook" />
+    <MESSAGE value="feat: favicon, title" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: favicon, title" />
   </component>
 </project>
